@@ -178,6 +178,11 @@
   .svc-card .ic svg { width: 46px; height: 46px; }
   .svc-card h3 { font-size: 30px; }
   .svc-card p { color: var(--muted); margin: 0; flex: 1; }
+  .svc-card h3 a { text-decoration: none; }
+  .svc-card h3 a:hover { color: var(--red-text); }
+  .foot-links { display: flex; flex-wrap: wrap; gap: 8px 18px; width: 100%; }
+  .foot-links a { color: var(--muted); text-decoration: none; }
+  .foot-links a:hover { color: var(--red-text); }
   .svc-card .more { font: 700 18px/1 "Barlow Condensed", sans-serif; text-transform: uppercase; letter-spacing: .06em; color: var(--red-text); text-decoration: none; }
   .live { display: inline-flex; align-items: center; gap: 10px; background: rgba(227,20,27,.14); border: 1px solid rgba(255,64,70,.5); color: var(--red-text); padding: 8px 14px; border-radius: 999px; font-weight: 600; font-size: 14px; }
   .pulse { width: 10px; height: 10px; border-radius: 50%; background: var(--red-text); animation: p 1.6s infinite; }
@@ -326,10 +331,10 @@
       <div class="svc-panel">
         <div class="panel-head"><b>Our services</b><span>24/7</span></div>
         <div class="svc-tiles">
-          <a class="svc-tile" href="#services"><svg aria-hidden="true"><use href="#i-battery"/></svg><b>Jump starts</b><span>Flat battery boosted on the spot</span></a>
-          <a class="svc-tile" href="#services"><svg aria-hidden="true"><use href="#i-tyre"/></svg><b>Flat tyres</b><span>Spare fitted at the roadside</span></a>
-          <a class="svc-tile" href="#services"><svg aria-hidden="true"><use href="#i-fuel"/></svg><b>Fuel delivery</b><span>Petrol or diesel brought to you</span></a>
-          <a class="svc-tile" href="#services"><svg aria-hidden="true"><use href="#i-recovery"/></svg><b>Recovery</b><span>Vehicle taken where you need it</span></a>
+          <a class="svc-tile" href="/jump-start-coventry/"><svg aria-hidden="true"><use href="#i-battery"/></svg><b>Jump starts</b><span>Flat battery boosted on the spot</span></a>
+          <a class="svc-tile" href="/flat-tyre-help-coventry/"><svg aria-hidden="true"><use href="#i-tyre"/></svg><b>Flat tyres</b><span>Spare fitted at the roadside</span></a>
+          <a class="svc-tile" href="/fuel-delivery-coventry/"><svg aria-hidden="true"><use href="#i-fuel"/></svg><b>Fuel delivery</b><span>Petrol or diesel brought to you</span></a>
+          <a class="svc-tile" href="/car-recovery-coventry/"><svg aria-hidden="true"><use href="#i-recovery"/></svg><b>Recovery</b><span>Vehicle taken where you need it</span></a>
         </div>
         <div class="panel-foot"><span>One number for all four</span><a href="tel:+447356022880">Call 07356 022880 &rarr;</a></div>
       </div>
@@ -351,10 +356,10 @@
       <h2 class="h2">Roadside help.<br>Day or night.</h2>
       <p class="sub">Breakdown, flat battery, flat tyre or empty tank &mdash; it's one number, 24 hours a day, anywhere in Coventry.</p>
       <div class="services-grid">
-        <article class="svc-card"><div class="ic"><svg aria-hidden="true"><use href="#i-battery"/></svg></div><h3>Jump starts</h3><p>Flat battery? We boost cars, vans and motorbikes with professional booster packs, then check your battery before you go.</p><a class="more" href="tel:+447356022880">From &pound;45 &middot; Call now &rarr;</a></article>
-        <article class="svc-card"><div class="ic"><svg aria-hidden="true"><use href="#i-tyre"/></svg></div><h3>Flat tyres</h3><p>Puncture or flat tyre? We'll fit your spare at the roadside, or get you safely moving to a tyre fitter.</p><a class="more" href="tel:+447356022880">Call for a price &rarr;</a></article>
-        <article class="svc-card"><div class="ic"><svg aria-hidden="true"><use href="#i-fuel"/></svg></div><h3>Fuel delivery</h3><p>Run out of fuel? We'll bring enough petrol or diesel to get you to the nearest filling station.</p><a class="more" href="tel:+447356022880">Call for a price &rarr;</a></article>
-        <article class="svc-card"><div class="ic"><svg aria-hidden="true"><use href="#i-recovery"/></svg></div><h3>Recovery</h3><p>Can't be fixed at the roadside? We'll recover your vehicle to your home or a garage of your choice.</p><a class="more" href="tel:+447356022880">Call for a price &rarr;</a></article>
+        <article class="svc-card"><div class="ic"><svg aria-hidden="true"><use href="#i-battery"/></svg></div><h3><a href="/jump-start-coventry/">Jump starts</a></h3><p>Flat battery? We boost cars, vans and motorbikes with professional booster packs, then check your battery before you go.</p><a class="more" href="tel:+447356022880">From &pound;45 &middot; Call now &rarr;</a></article>
+        <article class="svc-card"><div class="ic"><svg aria-hidden="true"><use href="#i-tyre"/></svg></div><h3><a href="/flat-tyre-help-coventry/">Flat tyres</a></h3><p>Puncture or flat tyre? We'll fit your spare at the roadside, or get you safely moving to a tyre fitter.</p><a class="more" href="tel:+447356022880">Call for a price &rarr;</a></article>
+        <article class="svc-card"><div class="ic"><svg aria-hidden="true"><use href="#i-fuel"/></svg></div><h3><a href="/fuel-delivery-coventry/">Fuel delivery</a></h3><p>Run out of fuel? We'll bring enough petrol or diesel to get you to the nearest filling station.</p><a class="more" href="tel:+447356022880">Call for a price &rarr;</a></article>
+        <article class="svc-card"><div class="ic"><svg aria-hidden="true"><use href="#i-recovery"/></svg></div><h3><a href="/car-recovery-coventry/">Recovery</a></h3><p>Can't be fixed at the roadside? We'll recover your vehicle to your home or a garage of your choice.</p><a class="more" href="tel:+447356022880">Call for a price &rarr;</a></article>
       </div>
     </div>
   </section>
@@ -455,6 +460,7 @@
     <a class="logo footer-logo" href="#"><picture><source srcset="logo.webp" type="image/webp"><img src="logo-sm.png" width="450" height="145" alt="JumpStart Coventry"></picture></a>
     <span>© 2026 JumpStart Coventry · Mobile jump starts across all of Coventry</span>
     <span><a href="tel:+447356022880">07356 022880</a> · <a href="https://wa.me/447356022880">WhatsApp</a></span>
+    <nav class="foot-links" aria-label="Services"><a href="/jump-start-coventry/">Jump Start Coventry</a><a href="/flat-tyre-help-coventry/">Flat Tyre Help</a><a href="/fuel-delivery-coventry/">Fuel Delivery</a><a href="/car-recovery-coventry/">Car Recovery</a></nav>
   </div>
 </footer>
 

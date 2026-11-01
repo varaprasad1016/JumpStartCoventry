@@ -33,7 +33,7 @@ jobs:
       - name: Stage website files
         run: |
           mkdir site-artifact
-          cp -r index.html logo.png logo-sm.png logo.webp hero.jpg hero.webp hero-960.webp fonts favicon.ico favicon.png apple-touch-icon.png sitemap.xml robots.txt site-artifact/
+          cp -r index.html logo.png logo-sm.png logo.webp hero.jpg hero.webp hero-960.webp fonts favicon.ico favicon.png apple-touch-icon.png sitemap.xml robots.txt jump-start-coventry flat-tyre-help-coventry fuel-delivery-coventry car-recovery-coventry site-artifact/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
