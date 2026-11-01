@@ -4,13 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jump Start Coventry 24/7 | Flat Tyres, Fuel &amp; Recovery</title>
-<meta name="description" content="24/7 roadside help anywhere in Coventry: jump starts, flat tyres, fuel delivery and vehicle recovery. Call JumpStart Coventry on 07356 022880.">
+<meta name="description" content="24/7 breakdown help anywhere in Coventry: jump starts, flat tyres, fuel delivery and vehicle recovery. Call JumpStart Coventry on 07356 022880.">
 <link rel="canonical" href="https://jumpstartcoventry.co.uk/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://jumpstartcoventry.co.uk/">
 <meta property="og:title" content="JumpStart Coventry | 24/7 Jump Starts, Tyres, Fuel &amp; Recovery">
 <meta property="og:description" content="24/7 roadside help anywhere in Coventry. Call 07356 022880.">
 <meta property="og:image" content="https://jumpstartcoventry.co.uk/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jump Start Coventry 24/7 | Flat Tyres, Fuel &amp; Recovery">
+<meta name="twitter:description" content="24/7 breakdown help anywhere in Coventry. Call 07356 022880.">
+<meta name="twitter:image" content="https://jumpstartcoventry.co.uk/hero.jpg">
 <meta name="theme-color" content="#0d0f12">
 <link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" href="favicon.png" sizes="192x192">
@@ -30,6 +34,11 @@
     "addressLocality": "Coventry",
     "addressRegion": "West Midlands",
     "addressCountry": "GB"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 52.40656,
+    "longitude": -1.51217
   },
   "description": "24/7 mobile jump starts, flat tyre help, fuel delivery and vehicle recovery anywhere in Coventry.",
   "areaServed": {
@@ -99,10 +108,14 @@
   }
 }
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/barlow-condensed-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" type="image/webp" imagesrcset="hero-960.webp 960w, hero.webp 1672w" imagesizes="100vw" fetchpriority="high">
 <style>
+  @font-face { font-family: "Barlow Condensed"; font-style: normal; font-weight: 600; font-display: swap; src: url(fonts/barlow-condensed-600.woff2) format("woff2"); }
+  @font-face { font-family: "Barlow Condensed"; font-style: normal; font-weight: 700; font-display: swap; src: url(fonts/barlow-condensed-700.woff2) format("woff2"); }
+  @font-face { font-family: "Barlow Condensed"; font-style: normal; font-weight: 800; font-display: swap; src: url(fonts/barlow-condensed-800.woff2) format("woff2"); }
+  @font-face { font-family: "Inter"; font-style: normal; font-weight: 400 600; font-display: swap; src: url(fonts/inter-var.woff2) format("woff2"); }
   :root {
     --bg: #0d0f12;
     --panel: #15181d;
@@ -139,7 +152,8 @@
   .btn-o:hover { border-color: var(--red-text); color: var(--red-text); }
 
   .hero { position: relative; min-height: 92vh; display: flex; align-items: flex-end; padding: 150px 0 70px; overflow: hidden; }
-  .hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
+  .hero > picture { position: absolute; inset: 0; }
+  .hero > picture img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
   .hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(13,15,18,.35) 0%, rgba(13,15,18,.05) 28%, rgba(13,15,18,.7) 66%, rgba(13,15,18,.97) 100%), linear-gradient(90deg, rgba(13,15,18,.75), transparent 60%); z-index: 1; }
   .hero .wrap { position: relative; z-index: 2; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 48px; align-items: end; }
 
@@ -169,8 +183,10 @@
   .live { display: inline-flex; align-items: center; gap: 10px; background: rgba(227,20,27,.14); border: 1px solid rgba(255,64,70,.5); color: var(--red-text); padding: 8px 14px; border-radius: 999px; font-weight: 600; font-size: 14px; }
   .pulse { width: 10px; height: 10px; border-radius: 50%; background: var(--red-text); animation: p 1.6s infinite; }
   @keyframes p { 0% { box-shadow: 0 0 0 0 rgba(255,64,70,.6); } 100% { box-shadow: 0 0 0 14px rgba(255,64,70,0); } }
-  .hero h1 { font-size: clamp(52px, 7.6vw, 108px); margin: 22px 0 16px; max-width: 900px; }
-  .hero h1 span { color: var(--red-text); display: block; }
+  .hero h1 { margin: 0 0 16px; }
+  .hero h1 .live { font-family: Inter, system-ui, sans-serif; text-transform: none; letter-spacing: 0; line-height: 1.4; }
+  .hero h1 .display { display: block; font-size: clamp(52px, 7.6vw, 108px); margin-top: 22px; max-width: 900px; }
+  .hero h1 .display span { color: var(--red-text); display: block; }
   .hero p { font-size: 20px; color: #cdd3da; max-width: 560px; margin: 0 0 32px; }
   .phone-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
   .phone-big { font: 800 clamp(40px, 6vw, 64px)/1 "Barlow Condensed", sans-serif; color: #fff; text-decoration: none; letter-spacing: .02em; margin-right: 10px; }
@@ -287,7 +303,7 @@
 <div class="hazard"></div>
 <header>
   <div class="wrap">
-    <a class="logo" href="#"><img src="logo.png" width="720" height="232" alt="JumpStart Coventry"></a>
+    <a class="logo" href="#"><picture><source srcset="logo.webp" type="image/webp"><img src="logo-sm.png" width="450" height="145" alt="JumpStart Coventry"></picture></a>
     <div class="head-right">
       <nav><a href="#services">Services</a><a href="#how">How it works</a><a href="#prices">Prices</a><a href="#areas">Areas</a><a href="#faq">FAQ</a></nav>
       <a class="btn btn-red" href="tel:+447356022880">Call 24/7</a>
@@ -297,11 +313,10 @@
 
 <main>
   <section class="hero">
-    <img src="hero.jpg" fetchpriority="high" alt="Coventry skyline at night with a car and a recovery truck on a wet road">
+    <picture><source srcset="hero-960.webp 960w, hero.webp 1672w" sizes="100vw" type="image/webp"><img src="hero.jpg" fetchpriority="high" width="1672" height="941" alt="Coventry skyline at night with a car and a recovery truck on a wet road"></picture>
     <div class="wrap">
       <div class="hero-copy">
-        <span class="live"><span class="pulse"></span>24/7 jump starts &amp; roadside help in Coventry</span>
-        <h1>Flat battery?<span>We're on our way.</span></h1>
+        <h1><span class="live"><span class="pulse"></span>24/7 jump starts &amp; roadside help in Coventry</span><span class="display">Flat battery?<span>We're on our way.</span></span></h1>
         <p>24/7 jump starts, flat tyre help, fuel delivery and recovery anywhere in Coventry — day or night, weekends and bank holidays. One call, a fixed price, and you're moving again.</p>
         <div class="phone-row">
           <a class="phone-big" href="tel:+447356022880"><small>Call or WhatsApp</small>07356 022880</a>
@@ -335,7 +350,7 @@
     <div class="wrap">
       <span class="label">Our services</span>
       <h2 class="h2">Roadside help.<br>Day or night.</h2>
-      <p class="sub">Whatever has stopped you, it's one number &mdash; 24 hours a day, anywhere in Coventry.</p>
+      <p class="sub">Breakdown, flat battery, flat tyre or empty tank &mdash; it's one number, 24 hours a day, anywhere in Coventry.</p>
       <div class="services-grid">
         <article class="svc-card"><div class="ic"><svg aria-hidden="true"><use href="#i-battery"/></svg></div><h3>Jump starts</h3><p>Flat battery? We boost cars, vans and motorbikes with professional booster packs, then check your battery before you go.</p><a class="more" href="tel:+447356022880">From &pound;45 &middot; Call now &rarr;</a></article>
         <article class="svc-card"><div class="ic"><svg aria-hidden="true"><use href="#i-tyre"/></svg></div><h3>Flat tyres</h3><p>Puncture or flat tyre? We'll fit your spare at the roadside, or get you safely moving to a tyre fitter.</p><a class="more" href="tel:+447356022880">Call for a price &rarr;</a></article>
@@ -438,7 +453,7 @@
 <div class="hazard"></div>
 <footer>
   <div class="wrap">
-    <a class="logo footer-logo" href="#"><img src="logo.png" width="720" height="232" alt="JumpStart Coventry"></a>
+    <a class="logo footer-logo" href="#"><picture><source srcset="logo.webp" type="image/webp"><img src="logo-sm.png" width="450" height="145" alt="JumpStart Coventry"></picture></a>
     <span>© 2026 JumpStart Coventry · Mobile jump starts across all of Coventry</span>
     <span><a href="tel:+447356022880">07356 022880</a> · <a href="https://wa.me/447356022880">WhatsApp</a></span>
   </div>
